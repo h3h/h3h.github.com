@@ -398,24 +398,30 @@ p.margin {
 }
 .docsite .menu a {
   background-color: transparent;
-  color: #fff;
+  border-bottom: 3px solid transparent;
+  color: #eee;
   display: block;
   float: left;
   line-height: 29px;
-  margin-bottom: -2px;
+  margin-bottom: -3px;
   padding-bottom: 4px;
   padding-left: 15px;
   padding-right: 15px;
 }
+.docsite .menu a:first-child {
+  margin-left: -15px;
+}
 .docsite .menu a:hover {
   background-color: #353535;
+  border-color: #555;
+  color: #fff;
   text-decoration: none;
 }
 .docsite .clear {
   clear: both;
 }
 .docsite .header {
-  background: #CACFD5;
+  background: #CBCBCB;
   padding-top: 20px;
   padding-bottom: 95px;
   border-bottom: 1px solid #d2d2d2;
@@ -539,19 +545,19 @@ p.margin {
 .docsite .body code,
 .docsite .body table.params td.name {
   font-family: Monaco, Incosolata, monospace;
-  font-size: 12px;
+  font-size: 13px;
 }
 .docsite .body table.params td.name {
   color: #223FA5;
 }
 .docsite .body pre,
 .docsite .body code {
-  color: #B8D6F9;
+  color: #C8DBF5;
 }
 .docsite .body pre,
 .docsite .body .pre {
   background: #12356A;
-  border: 1px solid #d8dfea;
+  border: 1px solid #9DB6E1;
   border-left-width: 3px;
   margin: 18px;
   padding-top: 7px;

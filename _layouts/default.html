@@ -1,14 +1,23 @@
+---
+projects:
+  - name: Github Repo Widget
+    url : /docs/github-repo-widget/
+  - name: Jellyfish
+    url : /docs/jellyfish/
+---
 <!DOCTYPE html>
 <html>
 <head>
-  <title>FB.ui - Facebook Developers</title>
-  <link rel="stylesheet" href="../styles/site.css" />
+  <title>{{page.title}} - h3h.github.com</title>
+  <link rel="stylesheet" href="/styles/site.css" />
 </head>
 <body class="docsite">
   <div class="menu">
     <div class="content">
       <a href="/">Home</a>
-      <a href="/github-repo-widget">Github Repo Widget</a>
+      {% for project in page.projects %}
+      <a href="{{project.url}}">{{project.name}}</a>
+      {% endfor %}
       <div class="clear"></div>
     </div>
   </div>
