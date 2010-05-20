@@ -392,40 +392,24 @@ p.margin {
   border: 0;
 }
 .docsite .menu {
-  background: #3b5998;
+  background: #747474;
   font-weight: bold;
   padding-top: 8px;
 }
-.docsite .menu,
 .docsite .menu a {
+  background-color: transparent;
   color: #fff;
-}
-.docsite .menu a.logo {
-  padding-top: 4px;
-  margin-right: 25px;
-  line-height: 0;
-}
-.docsite .menu a.logo img {
-  width: 166px;
-  height: 17px;
-}
-.docsite .menu a.logo,
-.docsite .menu a.l {
   display: block;
   float: left;
-}
-.docsite .menu a.l {
   line-height: 29px;
-  padding-left: 11px;
-  padding-right: 11px;
+  margin-bottom: -2px;
+  padding-bottom: 4px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-.docsite .menu a.l:hover {
-  background-color: #5c75aa;
+.docsite .menu a:hover {
+  background-color: #353535;
   text-decoration: none;
-}
-.docsite .menu .search {
-  float: right;
-  padding-top: 3px;
 }
 .docsite .clear {
   clear: both;
