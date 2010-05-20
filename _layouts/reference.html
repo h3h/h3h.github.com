@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<div class="body washbody reference">
+  <div class="content">
+    <div class="bodyMenu">
+      {% if page.api %}
+      {% for section in page.api %}
+      <h4>{{section.name}}</h4>
+      <ul>
+        {% for item in section.items %}
+        <li>
+          <a href="{{item.url}}">{{item.name}}</a>
+        </li>
+        {% endfor %}
+      </ul>
+      {% endfor %}
+      {% endif %}
+    </div>
+    <div class="bodyText">
+      {{content}}
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>

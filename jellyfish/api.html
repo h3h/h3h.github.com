@@ -1,0 +1,66 @@
+---
+layout: reference
+title: Jellyfish API
+api:
+  - name  : Foo
+    items :
+      - name: bar
+        url : /Foo.bar.html
+      - name: bar
+        url : /Foo.bar.html
+  - name  : Baz
+    items :
+      - name: quux
+        url : /Baz.quux.html
+      - name: quux
+        url : /Baz.quux.html
+---
+<h1>FB.ui</h1>
+<p>
+  Method for triggering UI interaction with Facebook as iframe
+  dialogs or popups, like publishing to the stream, sharing links.
+</p>
+<pre>
+<code> var share =
+
+FB.ui(share, function(response));
+</code>
+</pre>
+<h2>Parameters</h2>
+<table class="params">
+  <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="name">
+      params
+    </td>
+    <td class="type">
+      Object
+    </td>
+    <td>
+      <p>
+        The required arguments vary based on the method being used,
+        but specifying the method itself is mandatory. If
+        <em>display</em> is not specified, then iframe dialogs will
+        be used when possible, and popups otherwise.
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td class="name">
+      cb
+    </td>
+    <td class="type">
+      Function
+    </td>
+    <td>
+      <p>
+        Optional callback function to handle the result. Not all
+        methods may have a response.
+      </p>
+    </td>
+  </tr>
+</table>
