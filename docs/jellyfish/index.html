@@ -2,11 +2,36 @@
 layout: docs
 title: Jellyfish
 ---
-<h2>Introduction</h2>
+<h2>Why Jellyfish?</h2>
 
-<p>The Facebook Platform enables you to make your website more personalized and social. You can mix and match Facebook's APIs to best meet your goals:</p>
+<p>I kept running into situations where I wanted to create a relatively simple
+web site that had many static pages and a small amount of scripting on each.
+Previously, I would have to create a separate .js file for each static page,
+then loading each different .js file from each .html file.</p>
 
-<p><button class="disabled">Disabled Button</button></p>
+<p>Instead of worrying about all of these different .js files for a small
+amount of scripting, I created Jellyfish. This way, I can write a single .js
+file that controls all of the scripting across the site, partitioned by page
+(or sets of pages). I can include the single .js file in my layout file and
+avoid the headache of managing myriad .js files. Isn't that nice?</p>
+
+<hr />
+
+<h2>An Example</h2>
+
+<pre>
+Jellyfish(function () {{"{"}}
+  this.bloom('/about', function () {{"{"}}
+    this.sting('#header/click', function (evt) {{"{"}}
+      alert("Hi there.");
+    });
+  });
+});
+</pre>
+
+<p>On the page with the URL <code>/about</code>, find the element matching the
+<code>#header</code> selector and install a <code>click</code> event
+listener.</p>
 
 <ul>
 <li><p><strong>Registration + Login</strong> &mdash; With a single dialog, you can access data including a user's real name, email address, profile picture and list of friends.  Replace or supplement your user account system with Facebook to help drive signups and improve data quality.</p></li>
